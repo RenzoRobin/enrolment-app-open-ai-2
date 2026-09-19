@@ -1,0 +1,10 @@
+{
+    "mcpServers": {
+        "student-enrolment-rag": {
+            "command": "python",
+            "args": [
+                "rag_server.py"
+            ]
+        }
+    }
+}

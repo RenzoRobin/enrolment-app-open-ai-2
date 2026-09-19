@@ -20,7 +20,8 @@ def _menu_choice_to_key(choice: str) -> str | None:
         "2": "endpoints",
         "3": "architecture",
         "4": "devops",
-        "5": "mcp",  # Add this line
+        "5": "mcp",
+        "6": "rag",
     }.get(choice)
 
 def _print_mode_mapping(app_dir: Path) -> None:
@@ -29,7 +30,8 @@ def _print_mode_mapping(app_dir: Path) -> None:
         "Endpoints": app_dir / "prompts" / "service",
         "Architecture": app_dir / "prompts" / "lab4",
         "DevOps": app_dir / "prompts" / "lab5",
-        "MCP": app_dir / "prompts" / "lab7",  # Add this line
+        "MCP": app_dir / "prompts" / "lab7",
+        "RAG": app_dir / "prompts" / "lab8",
     }
     print_prompt_map({key: str(path) for key, path in prompt_map.items()})
 
